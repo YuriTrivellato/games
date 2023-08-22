@@ -9,14 +9,14 @@ def bem_vindo():
     print("****Bem vindo a Forca!****")
     print("**************************\n")
 
-def palavras():
+def palavras(arquivo="palavras.txt"):
     '''
     Retorna a lista de palavras para o jogo
     '''
 
     palavras = []
 
-    with open("palavras.txt", "r") as arquivo:
+    with open(arquivo, "r") as arquivo:
         for linha in arquivo:
             linha = linha.strip()
             palavras.append(linha)
